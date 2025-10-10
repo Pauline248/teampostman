@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "633326ab-11fc-4659-9adf-a8a5d11d42a1",
+		"name": "Pauline API testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49122044",
+		"_collection_link": "https://paulineezen-3778069.postman.co/workspace/Pauline-Ezenwankwo's-Workspace~b65cc3ed-5671-4ecb-8de6-bd6513419d32/collection/49122044-633326ab-11fc-4659-9adf-a8a5d11d42a1?action=share&source=collection_link&creator=49122044"
+	},
+	"item": [
+		{
+			"name": "Pauline API testing/Postman",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"try {\r",
+							"    const response = await pm.sendRequest({\r",
+							"        url: \"https://postman-echo.com/get\",\r",
+							"        method: \"GET\"\r",
+							"    });\r",
+							"\r",
+							"    console.log(response.json());\r",
+							"} catch (err) {\r",
+							"    console.error(err);\r",
+							"}"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+					"protocol": "https",
+					"host": [
+						"api",
+						"postman",
+						"com"
+					],
+					"path": [
+						"collections",
+						"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0"
+					],
+					"query": [
+						{
+							"key": "access_key",
+							"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.postman.com/collections/3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0?access_key=PMAT-01H40M7GCGGGYX7EFK4BFTRHZX",
+							"protocol": "https",
+							"host": [
+								"api",
+								"postman",
+								"com"
+							],
+							"path": [
+								"collections",
+								"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0"
+							],
+							"query": [
+								{
+									"key": "access_key",
+									"value": "PMAT-01H40M7GCGGGYX7EFK4BFTRHZX"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 09 Oct 2025 14:33:54 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "deny"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "referrer-policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "access-control-allow-origin",
+							"value": "*"
+						},
+						{
+							"key": "access-control-allow-methods",
+							"value": "GET,POST,PUT,DELETE"
+						},
+						{
+							"key": "access-control-allow-headers",
+							"value": "content-type,x-api-key"
+						},
+						{
+							"key": "access-control-allow-credentials",
+							"value": "false"
+						},
+						{
+							"key": "x-ratelimit-limit",
+							"value": "1000"
+						},
+						{
+							"key": "x-ratelimit-reset",
+							"value": "59"
+						},
+						{
+							"key": "x-ratelimit-remaining",
+							"value": "999"
+						},
+						{
+							"key": "ratelimit",
+							"value": "limit=1000, remaining=999, reset=59"
+						},
+						{
+							"key": "ratelimit-policy",
+							"value": "1000;w=60"
+						},
+						{
+							"key": "ratelimit-limit",
+							"value": "1000"
+						},
+						{
+							"key": "ratelimit-remaining",
+							"value": "999"
+						},
+						{
+							"key": "ratelimit-reset",
+							"value": "59"
+						},
+						{
+							"key": "last-modified",
+							"value": "2023-06-28T09:08:14.000Z"
+						},
+						{
+							"key": "uwebsockets",
+							"value": "20"
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "140"
+						},
+						{
+							"key": "cf-cache-status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "__cf_bm=11cLZFOezgsqH7E3n7CzJyEvbdWM9gVuhcJ7T3RjgfE-1760020434-1.0.1.1-v9xWl17eeUlNtq3kpNiyqeUY6z52VkqjT4Lefb0_IehY8PT8xBrEBvQVV8qh_FdFwoQBbFLlgGDclgUcd7oJSG.g9aU66QAv8SrPaLGflcg; path=/; expires=Thu, 09-Oct-25 15:03:54 GMT; domain=.postman.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "_cfuvid=cG1Hzpy5f1gVKzzbpPx6TzfywzZowxFnHGuEx7t.1Wc-1760020434605-0.0.1.1-604800000; path=/; domain=.postman.com; HttpOnly; Secure; SameSite=None"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains; preload"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "98be9882bdcfbed8-LHR"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"collection\": {\n        \"info\": {\n            \"_postman_id\": \"8ed1a723-7194-4433-9aef-352e9b86d1e0\",\n            \"name\": \"STSTStudentCourse\",\n            \"schema\": \"https://schema.getpostman.com/json/collection/v2.1.0/collection.json\",\n            \"updatedAt\": \"2023-06-28T09:08:14.000Z\",\n            \"createdAt\": \"2023-04-22T16:21:20.000Z\",\n            \"lastUpdatedBy\": \"3865219\",\n            \"uid\": \"3865219-8ed1a723-7194-4433-9aef-352e9b86d1e0\"\n        },\n        \"item\": [\n            {\n                \"name\": \"Get All Todo Entries\",\n                \"item\": [\n                    {\n                        \"name\": \"Get All Todo Entries\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"6ac5a49a-3baa-4284-9644-a100f39659e5\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"35b316c7-c1b2-486c-ae61-a4350f5955a6\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"\"\n                            },\n                            \"url\": {\n                                \"raw\": \"https://demo.fusio-project.org/index.php\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"demo\",\n                                    \"fusio-project\",\n                                    \"org\"\n                                ],\n                                \"path\": [\n                                    \"index.php\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"type\": \"text\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-35b316c7-c1b2-486c-ae61-a4350f5955a6\"\n                    }\n                ],\n                \"id\": \"9b93199a-54f9-4394-8147-787c8d207581\",\n                \"uid\": \"3865219-9b93199a-54f9-4394-8147-787c8d207581\"\n            },\n            {\n                \"name\": \"Get All Entries\",\n                \"item\": [\n                    {\n                        \"name\": \"Get All Entries\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"444ff167-cf84-4d3d-9cb6-151265f23145\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"cb151585-e902-4c4e-85a5-d73bfbb5378d\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"url\": {\n                                \"raw\": \"https://demo.fusio-project.org/index.php/\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"demo\",\n                                    \"fusio-project\",\n                                    \"org\"\n                                ],\n                                \"path\": [\n                                    \"index.php\",\n                                    \"\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            },\n                            \"description\": \"https://demo.fusio-project.org/index.php/\"\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-cb151585-e902-4c4e-85a5-d73bfbb5378d\"\n                    }\n                ],\n                \"id\": \"9e3d0e73-ea72-4031-804d-b509c26fbe4f\",\n                \"uid\": \"3865219-9e3d0e73-ea72-4031-804d-b509c26fbe4f\"\n            },\n            {\n                \"name\": \"Get entry per ID\",\n                \"item\": [\n                    {\n                        \"name\": \"Get entry per ID - Valid ID\",\n                        \"id\": \"f74958f9-7696-4e9d-8e5c-0b12c86cdf08\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"\"\n                            },\n                            \"url\": {\n                                \"raw\": \"https://demo.fusio-project.org/index.php\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"demo\",\n                                    \"fusio-project\",\n                                    \"org\"\n                                ],\n                                \"path\": [\n                                    \"index.php\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            },\n                            \"description\": \"https://demo.fusio-project.org/index.php/todo/:todo_id\"\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-f74958f9-7696-4e9d-8e5c-0b12c86cdf08\"\n                    },\n                    {\n                        \"name\": \"Get entry per ID - Invalid ID(params not using TODO ID)\",\n                        \"id\": \"44f0debc-d813-4893-99b4-02a46ef6c6e4\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"url\": {\n                                \"raw\": \"https://demo.fusio-project.org/\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"demo\",\n                                    \"fusio-project\",\n                                    \"org\"\n                                ],\n                                \"path\": [\n                                    \"\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            },\n                            \"description\": \"https://demo.fusio-project.org/index.php/todo/:todo_id\"\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-44f0debc-d813-4893-99b4-02a46ef6c6e4\"\n                    }\n                ],\n                \"id\": \"4d8d5e39-2ff6-4f9a-a79d-6b7d2d285565\",\n                \"uid\": \"3865219-4d8d5e39-2ff6-4f9a-a79d-6b7d2d285565\"\n            },\n            {\n                \"name\": \"Get Books\",\n                \"item\": [\n                    {\n                        \"name\": \"Get All Books\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"1e222d8c-f15a-4f39-a06a-506623c88b2b\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"287f5de6-99e1-4c48-8fc4-f2853f1b3a49\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/books\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"books\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-287f5de6-99e1-4c48-8fc4-f2853f1b3a49\"\n                    },\n                    {\n                        \"name\": \"Get Books by ID\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"1e222d8c-f15a-4f39-a06a-506623c88b2b\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"a73df619-3b0b-42c2-95bc-e382c237e0af\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/books/:bookId\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"books\",\n                                    \":bookId\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ],\n                                \"variable\": [\n                                    {\n                                        \"key\": \"bookId\",\n                                        \"value\": \"1\"\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-a73df619-3b0b-42c2-95bc-e382c237e0af\"\n                    },\n                    {\n                        \"name\": \"Get Books by Type\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"8206d0b0-80cc-4104-9a65-e26a2c4dcb71\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"2e9c43e6-2d2d-4ed0-8179-99b71d383752\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/books?type=fiction\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"books\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"type\",\n                                        \"value\": \"fiction\"\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-2e9c43e6-2d2d-4ed0-8179-99b71d383752\"\n                    }\n                ],\n                \"id\": \"2332af1e-595d-45c1-b4a1-c35f4a91b8f0\",\n                \"uid\": \"3865219-2332af1e-595d-45c1-b4a1-c35f4a91b8f0\"\n            },\n            {\n                \"name\": \"Place a book order\",\n                \"item\": [\n                    {\n                        \"name\": \"Place a book order - using book ID\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"ec3714ed-dd91-4945-ba58-41e7bfb0ffb6\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"fddcc018-7c64-46e2-9c9f-18e2dda8ed74\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"POST\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"{\\n    \\\"bookId\\\": 1,\\n    \\\"customerName\\\": \\\"Testify Academy\\\"\\n}\",\n                                \"options\": {\n                                    \"raw\": {\n                                        \"language\": \"json\"\n                                    }\n                                }\n                            },\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/orders\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"orders\"\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-fddcc018-7c64-46e2-9c9f-18e2dda8ed74\"\n                    }\n                ],\n                \"id\": \"abb69db3-6db9-48cb-8f97-0e3d7a8bd9d2\",\n                \"uid\": \"3865219-abb69db3-6db9-48cb-8f97-0e3d7a8bd9d2\"\n            },\n            {\n                \"name\": \"Get an order\",\n                \"item\": [\n                    {\n                        \"name\": \"Get all orders\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"786067ba-f1c5-430f-a501-447764f71666\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"832ba353-85ae-4fba-9b7d-ec8c8a83d26a\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"\",\n                                \"options\": {\n                                    \"raw\": {\n                                        \"language\": \"json\"\n                                    }\n                                }\n                            },\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/orders\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"orders\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-832ba353-85ae-4fba-9b7d-ec8c8a83d26a\"\n                    },\n                    {\n                        \"name\": \"Get an order - using orderID\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"39f96a54-f332-430b-b6e4-3f3a559c0f3d\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"5fe04728-31dc-4573-8d20-94660d33072b\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"GET\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"\",\n                                \"options\": {\n                                    \"raw\": {\n                                        \"language\": \"json\"\n                                    }\n                                }\n                            },\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/orders/:orderId\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"orders\",\n                                    \":orderId\"\n                                ],\n                                \"variable\": [\n                                    {\n                                        \"key\": \"orderId\",\n                                        \"value\": \"AaX7WGCUeHH3lRwGRh57M\"\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-5fe04728-31dc-4573-8d20-94660d33072b\"\n                    }\n                ],\n                \"id\": \"1923b2ce-12bf-49a8-98aa-8783109db30a\",\n                \"uid\": \"3865219-1923b2ce-12bf-49a8-98aa-8783109db30a\"\n            },\n            {\n                \"name\": \"Update an order\",\n                \"item\": [\n                    {\n                        \"name\": \"Update an order\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"786067ba-f1c5-430f-a501-447764f71666\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"072f062e-75dc-418b-ac45-45c53ebed6d5\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"POST\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"{\\n    \\\"bookId\\\": 1,\\n    \\\"customerName\\\": \\\"Testify Academy\\\"\\n}\",\n                                \"options\": {\n                                    \"raw\": {\n                                        \"language\": \"json\"\n                                    }\n                                }\n                            },\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/orders/\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"orders\",\n                                    \"\"\n                                ],\n                                \"query\": [\n                                    {\n                                        \"key\": \"\",\n                                        \"value\": \"\",\n                                        \"disabled\": true\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-072f062e-75dc-418b-ac45-45c53ebed6d5\"\n                    }\n                ],\n                \"id\": \"b9368e4a-3d87-4998-aa87-ecf75942452b\",\n                \"uid\": \"3865219-b9368e4a-3d87-4998-aa87-ecf75942452b\"\n            },\n            {\n                \"name\": \"Delete an order\",\n                \"item\": [\n                    {\n                        \"name\": \"Delete an order\",\n                        \"event\": [\n                            {\n                                \"listen\": \"test\",\n                                \"script\": {\n                                    \"id\": \"053fe16f-510c-4769-8857-4f7bbd5ea4a2\",\n                                    \"exec\": [\n                                        \"\"\n                                    ],\n                                    \"type\": \"text/javascript\"\n                                }\n                            }\n                        ],\n                        \"id\": \"cc2e75db-a89d-4b29-b7dc-d849dfc958ed\",\n                        \"protocolProfileBehavior\": {\n                            \"disableBodyPruning\": true\n                        },\n                        \"request\": {\n                            \"auth\": {\n                                \"type\": \"bearer\",\n                                \"bearer\": [\n                                    {\n                                        \"key\": \"token\",\n                                        \"value\": \"540bd43cf706368d43ecbfd49df5a059c92c9f3306de459bf39c3a29b96ebfe5\",\n                                        \"type\": \"string\"\n                                    }\n                                ]\n                            },\n                            \"method\": \"DELETE\",\n                            \"header\": [],\n                            \"body\": {\n                                \"mode\": \"raw\",\n                                \"raw\": \"\",\n                                \"options\": {\n                                    \"raw\": {\n                                        \"language\": \"json\"\n                                    }\n                                }\n                            },\n                            \"url\": {\n                                \"raw\": \"https://simple-books-api.glitch.me/orders/:orderId\",\n                                \"protocol\": \"https\",\n                                \"host\": [\n                                    \"simple-books-api\",\n                                    \"glitch\",\n                                    \"me\"\n                                ],\n                                \"path\": [\n                                    \"orders\",\n                                    \":orderId\"\n                                ],\n                                \"variable\": [\n                                    {\n                                        \"key\": \"orderId\",\n                                        \"value\": \"rObASEWYlVrRX6cTAEgbt\"\n                                    }\n                                ]\n                            }\n                        },\n                        \"response\": [],\n                        \"uid\": \"3865219-cc2e75db-a89d-4b29-b7dc-d849dfc958ed\"\n                    }\n                ],\n                \"id\": \"ddc02346-095e-46ab-af17-9e9e39b42233\",\n                \"uid\": \"3865219-ddc02346-095e-46ab-af17-9e9e39b42233\"\n            },\n            {\n                \"name\": \"Register API Client\",\n                \"event\": [\n                    {\n                        \"listen\": \"test\",\n                        \"script\": {\n                            \"id\": \"2ee03ab9-5a32-4479-85e8-860b94af3c69\",\n                            \"exec\": [\n                                \"\"\n                            ],\n                            \"type\": \"text/javascript\"\n                        }\n                    }\n                ],\n                \"id\": \"7ca17152-b133-47f7-9002-5162cf6171ff\",\n                \"protocolProfileBehavior\": {\n                    \"disableBodyPruning\": true\n                },\n                \"request\": {\n                    \"auth\": {\n                        \"type\": \"oauth2\",\n                        \"oauth2\": [\n                            {\n                                \"key\": \"accessTokenUrl\",\n                                \"value\": \"https://demo.fusio-project.org/\",\n                                \"type\": \"string\"\n                            },\n                            {\n                                \"key\": \"tokenName\",\n                                \"value\": \"Authority\",\n                                \"type\": \"string\"\n                            },\n                            {\n                                \"key\": \"client_authentication\",\n                                \"value\": \"header\",\n                                \"type\": \"string\"\n                            },\n                            {\n                                \"key\": \"grant_type\",\n                                \"value\": \"client_credentials\",\n                                \"type\": \"string\"\n                            },\n                            {\n                                \"key\": \"addTokenTo\",\n                                \"value\": \"header\",\n                                \"type\": \"string\"\n                            }\n                        ]\n                    },\n                    \"method\": \"POST\",\n                    \"header\": [],\n                    \"body\": {\n                        \"mode\": \"raw\",\n                        \"raw\": \"{\\n   \\\"clientName\\\": \\\"Ibironke\\\",\\n   \\\"clientEmail\\\": \\\"ibironkeyekinni@gmail.com\\\"\\n}\",\n                        \"options\": {\n                            \"raw\": {\n                                \"language\": \"json\"\n                            }\n                        }\n                    },\n                    \"url\": {\n                        \"raw\": \"https://simple-books-api.glitch.me/api-clients/\",\n                        \"protocol\": \"https\",\n                        \"host\": [\n                            \"simple-books-api\",\n                            \"glitch\",\n                            \"me\"\n                        ],\n                        \"path\": [\n                            \"api-clients\",\n                            \"\"\n                        ],\n                        \"query\": [\n                            {\n                                \"key\": \"\",\n                                \"value\": null,\n                                \"disabled\": true\n                            }\n                        ]\n                    }\n                },\n                \"response\": [],\n                \"uid\": \"3865219-7ca17152-b133-47f7-9002-5162cf6171ff\"\n            },\n            {\n                \"name\": \"Get API Status\",\n                \"id\": \"d559af1e-04d2-4ef4-9a45-a5dff819ae2b\",\n                \"protocolProfileBehavior\": {\n                    \"disableBodyPruning\": true\n                },\n                \"request\": {\n                    \"method\": \"GET\",\n                    \"header\": [],\n                    \"url\": {\n                        \"raw\": \"https://simple-books-api.glitch.me/status\",\n                        \"protocol\": \"https\",\n                        \"host\": [\n                            \"simple-books-api\",\n                            \"glitch\",\n                            \"me\"\n                        ],\n                        \"path\": [\n                            \"status\"\n                        ]\n                    }\n                },\n                \"response\": [],\n                \"uid\": \"3865219-d559af1e-04d2-4ef4-9a45-a5dff819ae2b\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
