@@ -62,7 +62,7 @@
         ["xpath=//main[@id='mainContent']/div/div/div[2]/div/form/div/input", "xpath:idRelative"],
         ["xpath=//div/input", "xpath:position"]
       ],
-      "value": "penexy201@gmail.com"
+      "value": "xxxxxx@gmail.com"
     }, {
       "id": "94f4ff5e-e3cf-4c07-adbe-535d6e80157a",
       "comment": "",
@@ -248,7 +248,7 @@
         ["xpath=//main[@id='mainContent']/div/div/div[2]/div/form/div[4]/input", "xpath:idRelative"],
         ["xpath=//div[4]/input", "xpath:position"]
       ],
-      "value": "07068876563"
+      "value": "+23470xxxxxxxx"
     }, {
       "id": "a2bc8576-a5b6-4c34-a310-41590c36ebeb",
       "comment": "",
@@ -346,7 +346,7 @@
         ["xpath=//main[@id='mainContent']/div/div/div[2]/div/form/div[5]/input", "xpath:idRelative"],
         ["xpath=//div[5]/input", "xpath:position"]
       ],
-      "value": "1998-05-29"
+      "value": "xxxx-xx-xx"
     }, {
       "id": "839ff271-a06e-4ea1-85c2-f52178cb314e",
       "comment": "",
